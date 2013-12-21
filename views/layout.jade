@@ -9,9 +9,11 @@ html
 
     title= title
     
+    link(rel='stylesheet', href='css/bootstrap.min.css')
     link(rel='stylesheet', href='css/master.css')
   body
-    != content
+    div.container
+      != content
 
     //- add other scripts through require.js, not here
     script(data-main="js/main", src="js/require.js")
